@@ -1,0 +1,12 @@
+## Configuration of the service
+
+# Port of the http server
+server:
+  port: 9090
+
+
+# URL to request
+source:
+  url: 
+    availability: https://data.grandpoitiers.fr/api/records/1.0/search/?dataset=mobilites-stationnement-des-parkings-en-temps-reel&facet=nom&facet=uid
+

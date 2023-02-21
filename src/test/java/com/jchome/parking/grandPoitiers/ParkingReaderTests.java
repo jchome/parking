@@ -54,9 +54,10 @@ class ParkingReaderTests {
 		// Let's call the real method
 		List<Parking> parkings = null;
 		try {
+			// Give any serverUrl, but it shout be URL-compliant
 			parkings = reader.getParkingsAvailability("http://nothing");
 		} catch (InvalidJsonException e) {
-			fail();
+			fail("Something goes wrong...");
 		}
 
 		// Do checks of the result
@@ -65,7 +66,7 @@ class ParkingReaderTests {
 
 	}
 
-	// More tests to do with the same phylosophy...
+	// More tests to do with the same philosophy...
 
 
 }

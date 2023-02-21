@@ -44,6 +44,7 @@ public class ParkingService {
 		List<Parking> parkings = new ArrayList<>();
         ParkingReader reader = new ParkingReader();
 		try {
+            // Use the url of the server, defined in application.yml
 			parkings = reader.getParkingsAvailability(serverUrlAvailability);
 		} catch (InvalidJsonException e) {
             log.error("Error while getting parkings on URL " + serverUrlAvailability);

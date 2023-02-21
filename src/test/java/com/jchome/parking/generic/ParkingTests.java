@@ -36,7 +36,7 @@ class ParkingTests {
 		double lonBusStop = 0.3465447292159096;
 		int distanceToBus = parkingNotreDame.distanceTo(latBusStop, lonBusStop);
 		
-		// The distance to the bus is between 100m and 200m
+		// The distance to the bus should be between 100m and 200m
 		assertTrue( distanceToBus > 100 && distanceToBus < 200);
 
 	}

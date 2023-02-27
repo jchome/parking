@@ -106,3 +106,9 @@ curl 'localhost:9090/parkings/nearOfPoint?lat=46.58792657819305&lon=0.3485457744
 Obtenir tous les parking connus du service :
 
 curl localhost:9090/parkings/all | jq
+
+# Version en Python
+La version en python est plus simple, même s'il n'y a pas de tests unitaires dans ce gist (faite en 1h) :
+
+https://gist.github.com/jchome/8ec333eb3f8cffca4eb7d27840dc2c85#file-parkings-py
+

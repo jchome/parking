@@ -108,10 +108,8 @@ Obtenir tous les parking connus du service :
 curl localhost:9090/parkings/all | jq
 
 # Version en Python
-La version en python est plus simple, même s'il n'y a pas de tests unitaires dans ce gist (faite en 1h) :
+La version en python est plus simple, un peu plus rapide d'éxcution qu'en Java.
 
-https://gist.github.com/jchome/8ec333eb3f8cffca4eb7d27840dc2c85#file-parkings-py
+cf. fichier "main.py"
 
-Cette version est testable ici :
-
-https://replit.com/@JulienCoron/Parkings-of-Poitiers?v=1
+De plus, elle utilise un calculateur de distance (https://geopy.readthedocs.io/en/stable/) qui permet de fiabiliser les développements.
